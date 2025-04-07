@@ -68,6 +68,11 @@ public class Parser {
         String[] words = this.input.trim().split(" ");
         CoinflipLogger.fine("Split input into " + words.length + "words");
 
+        if (words.length < 1) {
+            CoinflipLogger.warning("Empty command");
+            throw new CoinflipException(CoinflipException.INVALID_COMMAND);
+        }
+
         switch (words[0]) {
         case "check":
             CoinflipLogger.fine("Created CheckCommand object");
