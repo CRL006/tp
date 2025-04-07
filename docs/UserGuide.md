@@ -135,6 +135,13 @@ Example of usage:
 
 ## Frequently Asked Questions (FAQ)
 
+**Q**: Are there any keyboard inputs I should avoid?
+
+**A**: Yes, avoid using **modifier keys**, such as Shift, Ctrl, Cmd, Win and Alt in your commands (e.g. Ctrl-Z), as
+these inputs may not be parsed by the program correctly, leading to erratic but expected behaviour. Due to said
+behaviour differing across operating systems, we do not currently plan to make the program handle such cases; we've
+opted to document it in this user guide instead.
+
 **Q**: Can I place extra words after my commands? (e.g. `check bet yay`)
 
 **A**: No, they will be rejected as invalid commands.
